@@ -10,7 +10,7 @@ class AddTodo extends Component {
     this.state = {
       content: "",
       date: "",
-      due: null,
+      due: null
     };
   }
   // The handleChange function updates the react state with the new input value provided from the user and the current date/time.
@@ -39,7 +39,7 @@ class AddTodo extends Component {
       this.setState({
         content: "",
         date: "",
-        due: null,
+        due: null
       });
     }
   };
@@ -72,6 +72,7 @@ class AddTodo extends Component {
         </LocalizationProvider>
 
         <Button
+        data-testid="new-item-button"
           style={{ marginLeft: "10px" }}
           onClick={this.handleSubmit}
           variant="contained"
